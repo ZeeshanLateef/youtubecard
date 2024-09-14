@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(171, 219, 248);
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;   
+        }
+        .container{
+            width: 400px;
+            height: 390px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        }
+        .Image{
+            width: 380px;
+            height: 240px;
+            border-radius: 10px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 26px;
+            margin-top: 5px;
+        }
+        hr{
+            border: 1px solid rgb(221, 217, 217);
+            margin: 10px 0px;
+        }
+        .price{
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 25px;
+            /* margin-top: 10px; */
+        }
+
+        .newPrice{
+            color: rgb(102, 116, 204);
+            padding-right: 8px
+        }
+        .prevPrice{
+            padding-right: 8px;
+            color: rgb(145, 143, 143);
+
+        }
+        .offPrice{
+            background-color: #1dd1a1;
+            color: #fff;
+            padding: 4px;
+            border-radius: 3px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img class="Image" src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="img">
+            <h2>Web Development Master Course @dot Batch</h2>
+            <hr>
+            <div class="price">
+                <span class="newPrice">₹4500</span>
+                <span class="prevPrice"><del>₹6999</del></span>
+                <span class="offPrice">42%off</span>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
